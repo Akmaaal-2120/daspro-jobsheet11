@@ -16,5 +16,9 @@ public class PowerRecursive15 {
         int power = input.nextInt();
         System.out.println("Result of " + base + " power " +power+" = " +
         calculatePower(base, power));
+        for(int i = 0; i < power; i++){
+            System.out.print(base + "x" );
+        }
+        System.out.println("1 = " + calculatePower(base, power) );
     }
 }
