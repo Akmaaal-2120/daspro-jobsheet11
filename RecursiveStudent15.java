@@ -4,13 +4,13 @@ public class RecursiveStudent15 {
         if(n==1){
             return 1;
         }else{
-            return n*factorialRecursive(-1);
+            return n*factorialRecursive(n-1);
         }
     }
     static int factorialIterative(int n){
         int factorial = 1;
         for(int i = n; i>=1; i--){
-            factorial = factorial*1;
+            factorial = factorial*i;
         }
         return factorial;
     }
